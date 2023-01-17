@@ -4,15 +4,15 @@
 }
 @font-face {
   font-family: MR ROBOT;
-  src: url(/Mrrobot-g123.ttf);
+  src: url(/mr-rabota/Mrrobot-g123.ttf);
 }
 @font-face {
   font-family: Inter-Black;
-  src: url(/Inter-Black.ttf);
+  src: url(/mr-rabota/Inter-Black.ttf);
 }
 body {
   content: "";
-  background: url("/fsociety111.jpg") no-repeat fixed;
+  background: url("/mr-rabota/fsociety111.jpg") no-repeat fixed;
   background-size: cover;
   position: absolute;
   height: 100%;
@@ -142,7 +142,7 @@ button:hover{
   background: red;
 }
 html {
-  cursor: url('/aero_arrow_black.cur'), auto;	
+  cursor: url('/mr-rabota/aero_arrow_black.cur'), auto;	
 }
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
