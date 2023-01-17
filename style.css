@@ -1,0 +1,186 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: MR ROBOT;
+  src: url(/Mrrobot-g123.ttf);
+}
+@font-face {
+  font-family: Inter-Black;
+  src: url(/Inter-Black.ttf);
+}
+body {
+  content: "";
+  background: url("/fsociety111.jpg") no-repeat fixed;
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "MR ROBOT";
+
+}
+
+/* .banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+.navbar{
+  width: 100%;
+  height: 90px;
+  background-color: #131212;
+  opacity: 0.5;
+  font-family: "Inter-Black";
+  padding: 2px 0;
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+  justify-content: space-between;
+}
+.logo{
+  margin-left: 100px;
+  margin-top: 20px;
+  width: 250px;
+  cursor: pointer;
+}
+.navbar ul li{
+  list-style: none;
+  padding: 20px;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  font-weight: normal;
+}
+.navbar ul li a{
+  text-decoration: none;
+  font-size: 150%;
+  color: #ff0202;
+  text-transform: uppercase;
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #ac1212;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover:after{
+  width: 100%;
+}
+.content{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fa0202;
+  font-weight: normal;
+  margin-top: -55px;
+}
+.content h1{
+  font-size: 70px;
+  margin-top: 10px;
+  font-weight: normal;
+
+}
+.content h2{
+  margin: 20px auto;
+  line-height: 25px;
+  font-weight: normal;
+  font-size: 25px;
+}
+button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: normal;
+  font-size: 100%;
+  font-family: "Inter-Black";
+  border: 2px solid #fa0202;
+  background: transparent;
+  color: #ff3c00;
+  text-shadow : 0px 0px 1px #000;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+span{
+  background: #ff3c00;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+button:hover span{
+  width: 100%;
+
+}
+button:hover{
+  color: #ffffff;
+}
+.footer{
+  height: 2000px;
+} 
+::selection {
+  color: #fff;
+  background: red;
+}
+html {
+  cursor: url('/aero_arrow_black.cur'), auto;	
+}
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: #ac1212;
+  
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3f3e3e;
+  color: white;
+}
+
+.twitter {
+  background: #3f3e3e;
+  color: white;
+}
+
+.youtube {
+  background: #3f3e3e;
+  color: white;
+}

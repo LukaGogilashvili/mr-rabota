@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="us">
+    <head>
+        <title>MR. ROBOT</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8"
+        <meta name="description" content="">
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="favicon" href="https://media.tenor.com/mKqTKeneyoMAAAAC/fsociety.gif"> 
+
+    </head>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <body>
+      <div class="icon-bar">
+        <a href="https://www.facebook.com/WhoIsMrRobot" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/whoismrrobot" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UCv-HoLYg3j53JgVC30P0mRg" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
+      </div>
+        <div class="navbar" style="position: fixed;">
+          <a href="#"><img src="/LOGO MRROBOT.png" class="logo"> </a>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">F-Tools</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="content">
+          <h1>MR. ROBOT</h1>
+          <h2>F$CK SOCIETY!</h2>
+          <div>
+            <button type="button" id="button1" onclick="Falert()"><span></span>FSOCIETY</button>
+            <button type="button" id="button2" onclick="Falert1()"><span></span>FUCK THEM</button>
+            <script>
+              function Falert(){
+                var button1 = document.getElementById("button1");
+                  
+                  alert("FSOCIETY!")
+              }
+              function Falert1(){
+                var button2 = document.getElementById("button2")
+                  alert("Fuck them!")
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+      <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "300120300648109");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v15.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="footer"></div>
+</html> 
