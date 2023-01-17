@@ -4,11 +4,11 @@
 }
 @font-face {
   font-family: MR ROBOT;
-  src: url(/Mrrobot-g123.ttf);
+  src: url(https://github.com/LukaGogilashvili/mr-rabota/blob/main/Mrrobot-g123.ttf);
 }
 @font-face {
   font-family: Inter-Black;
-  src: url(/Inter-Black.ttf);
+  src: url(https://github.com/LukaGogilashvili/mr-rabota/blob/main/Inter-Black.ttf);
 }
 body {
   content: "";
